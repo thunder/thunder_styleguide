@@ -1,0 +1,7 @@
+thunder_styleguide.controller:
+  path: '/admin/thunder-styleguide'
+  defaults:
+    _controller: '\Drupal\thunder_styleguide\Controller\PageController::page'
+    _title: 'Thunder Styleguide'
+  requirements:
+    _permission: 'access thunder style guide'

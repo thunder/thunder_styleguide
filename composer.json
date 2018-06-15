@@ -1,0 +1,16 @@
+{
+  "name": "drupal/thunder_styleguide",
+  "description": "Simple styleguide page for admin themes.",
+  "type": "drupal-module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0-or_later",
+  "authors": [
+    {
+      "name": "Volker Killesreiter",
+      "email": "volker.killesreiter@burda.com"
+    }
+  ],
+  "require": {
+    "drupal/core": "~8"
+  }
+}

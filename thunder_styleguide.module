@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Contains thunder_styleguide.module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function thunder_styleguide_theme() {
+  return [
+    'thunder_styleguide' => [
+      'render element' => 'children',
+      'variables' => [
+        'form' => NULL,
+      ],
+    ],
+  ];
+}
