@@ -3,7 +3,7 @@
   "description": "Simple styleguide page for admin themes.",
   "type": "drupal-module",
   "keywords": ["Drupal"],
-  "license": "GPL-2.0-or_later",
+  "license": "GPL-2.0-or-later",
   "authors": [
     {
       "name": "Volker Killesreiter",
