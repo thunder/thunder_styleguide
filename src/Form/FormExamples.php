@@ -467,6 +467,7 @@ class FormExamples extends FormBase {
     $form['phone'] = [
       '#type' => 'tel',
       '#title' => $this->t('Phone'),
+      '#default_value' => $this->t('0123456789'),
       '#description' => $this->t('Tel, #type = tel'),
     ];
 
@@ -510,6 +511,7 @@ class FormExamples extends FormBase {
     $form['url'] = [
       '#type' => 'url',
       '#title' => $this->t('URL'),
+      '#default_value' => 'http://example.com',
       '#maxlength' => 255,
       '#size' => 30,
       '#description' => $this->t('URL, #type = url'),
