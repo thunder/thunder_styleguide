@@ -1,5 +1,5 @@
 {
-  "name": "drupal/thunder_styleguide",
+  "name": "thunder/thunder_styleguide",
   "description": "Simple styleguide page for admin themes.",
   "type": "drupal-module",
   "keywords": ["Drupal"],
