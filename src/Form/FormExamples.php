@@ -443,15 +443,17 @@ class FormExamples extends FormBase {
 
     // Status_messages.
     $messages = ['status', 'warning', 'error'];
+    $form['messages'] = [
+      'content' => [
+        '#theme' => 'status_messages',
+        '#message_list' => [],
+      ],
+    ];
+
     foreach ($messages as $message) {
       // Set a new message with a link.
       drupal_set_message($this->t('Lorem ipsum dolor sit amet.'), $message);
-      $form[$message . '-message'] = [
-        'content' => [
-          '#theme' => 'status_messages',
-          '#message_list' => drupal_get_messages($message),
-        ],
-      ];
+      $form['messages']['content']['#message_list'] += drupal_get_messages($message);
     }
     // Clear messages.
     drupal_get_messages();
