@@ -380,20 +380,44 @@ class FormExamples extends FormBase {
     ];
 
     // radio.
-    $form['single_radio'] = [
+    $form['test_single_radio'] = [
       '#type' => 'radio',
       '#title' => 'Single radio',
       '#name' => 'ABC',
       '#return_value' => 'ABC',
-      '#default_value' => 'ACB',
     ];
 
     // Radios.
-    $form['settings']['active'] = [
+    $form['test_radios'] = [
       '#type' => 'radios',
-      '#title' => $this->t('Poll status'),
+      '#title' => $this->t('Test radios'),
       '#options' => [0 => $this->t('Closed'), 1 => $this->t('Active')],
       '#description' => $this->t('Radios, #type = radios'),
+    ];
+
+    // Radios selected.
+    $form['test_radios_selected'] = [
+      '#type' => 'radios',
+      '#title' => $this->t('Test radios selected'),
+      '#options' => [0 => $this->t('Closed'), 1 => $this->t('Active')],
+      '#default_value' => 0,
+      '#description' => $this->t('Radios, #type = radios'),
+    ];
+
+    // Checkboxes in container-inline.
+    $form['inline_checkboxes'] = [
+      '#type' => 'checkboxes',
+      '#title' => 'Checkboxes test',
+      '#options' => ['Option 1', 'Option 2', 'Option 3'],
+      '#attributes' => ['class' => ['container-inline']],
+    ];
+
+    // Radios in container-inline.
+    $form['inline_radios'] = [
+      '#type' => 'radios',
+      '#title' => 'Radios test',
+      '#options' => ['Option 1', 'Option 2', 'Option 3'],
+      '#attributes' => ['class' => ['container-inline']],
     ];
 
     // Range.
