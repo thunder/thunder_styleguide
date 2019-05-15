@@ -525,13 +525,21 @@ class FormExamples extends FormBase {
     ];
 
     // Text format.
-    $form['text_format'] = [
-      '#type' => 'text_format',
-      '#title' => 'Text format',
-      '#default_value' => $this->t('Lorem ipsum dolor sit amet.'),
-      '#format' => 'full_html',
-      '#description' => $this->t('Text format, #type = text_format'),
-    ];
+    foreach (filter_formats() as $format) {
+      var_dump( $format->id());
+      $form['text_' . $format->id()] = [
+        '#type' => 'text_format',
+        '#title' => $this->t('Text format'),
+        '#default_value' => $this->t('Lorem ipsum dolor sit amet.'),
+        '#format' => $format->id(),
+        '#description' => $this->t('Text format, #type = @text_format', ['@text_format' => $format->id()]),
+
+        '#type' => 'text_format',
+        '#title' => $this->t('Text'),
+        '#text' => $this->t('Lorem ipsum dolor sit amet.'),
+        '#text_format' => $format,
+      ];
+    }
 
     // Textarea.
     $form['text'] = [
