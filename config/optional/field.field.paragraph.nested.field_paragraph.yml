@@ -1,0 +1,55 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph
+    - paragraphs.paragraphs_type.nested
+  module:
+    - entity_reference_revisions
+id: paragraph.nested.field_paragraph
+field_name: field_paragraph
+entity_type: paragraph
+bundle: nested
+label: Paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles: null
+    target_bundles_drag_drop:
+      nested:
+        weight: 11
+        enabled: false
+      gallery:
+        weight: 12
+        enabled: false
+      image:
+        weight: 13
+        enabled: false
+      instagram:
+        weight: 14
+        enabled: false
+      link:
+        weight: 15
+        enabled: false
+      pinterest:
+        weight: 16
+        enabled: false
+      quote:
+        weight: 17
+        enabled: false
+      text:
+        weight: 18
+        enabled: false
+      twitter:
+        weight: 19
+        enabled: false
+      video:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions
