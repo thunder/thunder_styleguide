@@ -151,13 +151,6 @@
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
-    "changed": [
-        {
-            "value": "2019-07-30T12:53:13+00:00",
-            "lang": "en",
-            "format": "Y-m-d\\TH:i:sP"
-        }
-    ],
     "promote": [
         {
             "value": true,
