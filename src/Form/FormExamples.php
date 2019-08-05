@@ -526,7 +526,6 @@ class FormExamples extends FormBase {
 
     // Text format.
     foreach (filter_formats() as $format) {
-      var_dump( $format->id());
       $form['text_' . $format->id()] = [
         '#type' => 'text_format',
         '#title' => $this->t('Text format'),

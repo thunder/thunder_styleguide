@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Thunder Styleguide install hooks.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function thunder_styleguide_install() {
+  /** @var \Drupal\field\Entity\FieldConfig $field */
+  $field = \Drupal::entityTypeManager()->getStorage('field_config')->load('node.article.field_paragraphs');
+  if ($field) {
+    $settings = $field->getSetting('handler_settings');
+    if (!isset($settings['negate']) || !$settings['negate']) {
+      $settings['target_bundles']['nested'] = 'nested';
+      $settings['target_bundles_drag_drop']['nested'] = ['enabled' => TRUE, 'weight' => 10];
+      $field->setSetting('handler_settings', $settings);
+      $field->save();
+    }
+  }
+}
