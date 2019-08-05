@@ -3,3 +3,5 @@ type: module
 description: 'HTML styleguide for visual regression testing.'
 core: 8.x
 package: 'Thunder'
+dependencies:
+  - thunder:thunder_demo
