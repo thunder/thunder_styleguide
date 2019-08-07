@@ -55,6 +55,8 @@ class FormExamples extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
+    // Behave like a content form.
+    $form['#attached']['library'][] = 'thunder_admin/content-form';
 
     $form['description'] = [
       '#type' => 'item',
@@ -516,6 +518,11 @@ class FormExamples extends FormBase {
       '#empty' => $this->t('No users found'),
     ];
 
+    $form['content_form'] = [
+      '#type' => 'fieldset',
+      '#attributes' => [ 'class' => [ 'content-form__form-section']],
+    ];
+    $form['content_form'][] = $form['table'];
     // Tel.
     $form['phone'] = [
       '#type' => 'tel',
