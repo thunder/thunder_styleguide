@@ -57,6 +57,7 @@ class FormExamples extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
     // Behave like a content form.
     $form['#attached']['library'][] = 'thunder_admin/content-form';
+    $form['#attached']['library'][] = 'thunder_admin/paragraphs.widget';
 
     $form['description'] = [
       '#type' => 'item',
@@ -170,6 +171,37 @@ class FormExamples extends FormBase {
     $form['accommodation']['diet'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Dietary Restrictions'),
+    ];
+
+    // Mock paragraphs subform field-name-image details container, see #3076779.
+    $form['field_name_image_paragraph_wrapper'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => ['paragraph-form-item--has-subform']],
+    ];
+
+    $form['field_name_image_paragraph_wrapper']['field_name_image'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => ['field--name-field-image']],
+    ];
+
+    $form['field_name_image_paragraph_wrapper']['field_name_image']['open'] = [
+      '#type' => 'details',
+      '#title' => 'Open details summary',
+      '#open' => TRUE,
+      'description' => [
+        '#type' => 'textfield',
+        '#title' => 'Details element is open, summary should be hidden.',
+      ],
+    ];
+
+    $form['field_name_image_paragraph_wrapper']['field_name_image']['closed'] = [
+      '#type' => 'details',
+      '#title' => 'Details element is closed, summary should be visible',
+      '#open' => FALSE,
+      'description' => [
+        '#type' => 'textfield',
+        '#title' => 'Details element is closed, summary should be visible.',
+      ],
     ];
     /* END Containers */
 
