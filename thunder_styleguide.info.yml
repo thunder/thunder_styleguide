@@ -1,7 +1,7 @@
 name: 'Thunder Styleguide'
 type: module
 description: 'HTML styleguide for visual regression testing.'
-core: 8.x
+core_version_requirement: ^8.7.7 || ^9
 package: 'Thunder'
 dependencies:
   - thunder_testing_demo:thunder_testing_demo
