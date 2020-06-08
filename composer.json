@@ -9,8 +9,5 @@
       "name": "Volker Killesreiter",
       "email": "volker.killesreiter@burda.com"
     }
-  ],
-  "require": {
-    "drupal/core": "~8"
-  }
+  ]
 }
