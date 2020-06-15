@@ -515,6 +515,7 @@ class FormExamples extends FormBase {
     }
 
     $form['messages']['content']['#message_list'] = $messenger->all();
+    $messenger->deleteAll();
 
     /* status_report */
     /* status_report_page */
