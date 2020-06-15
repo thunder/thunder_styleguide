@@ -241,8 +241,8 @@ class FormExamples extends FormBase {
       '#type' => 'datetime',
       '#title' => 'Date Time',
       '#date_increment' => 1,
-      '#date_timezone' => drupal_get_user_timezone(),
-      '#default_value' => drupal_get_user_timezone(),
+      '#date_timezone' => date_default_timezone_get(),
+      '#default_value' => date_default_timezone_get(),
       '#description' => $this->t('Date time, #type = datetime'),
     ];
 
@@ -500,7 +500,6 @@ class FormExamples extends FormBase {
     ];
 
     // Status_messages.
-    $messages = ['status', 'warning', 'error'];
     $form['messages'] = [
       'content' => [
         '#theme' => 'status_messages',
@@ -508,13 +507,14 @@ class FormExamples extends FormBase {
       ],
     ];
 
-    foreach ($messages as $message) {
+    $types = ['status', 'warning', 'error'];
+    $messenger = \Drupal::messenger();
+    foreach ($types as $type) {
       // Set a new message with a link.
-      drupal_set_message($this->t('Lorem ipsum dolor sit amet.'), $message);
-      $form['messages']['content']['#message_list'] += drupal_get_messages($message);
+      $messenger->addMessage($this->t('Lorem ipsum dolor sit amet.'), $type);
     }
-    // Clear messages.
-    drupal_get_messages();
+
+    $form['messages']['content']['#message_list'] = $messenger->all();
 
     /* status_report */
     /* status_report_page */
@@ -697,9 +697,11 @@ class FormExamples extends FormBase {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
+
+    $messenger = \Drupal::messenger();
     // Display result.
     foreach ($form_state->getValues() as $key => $value) {
-      drupal_set_message($key . ': ' . $value);
+      $messenger->addMessage($key . ': ' . $value);
     }
 
   }
