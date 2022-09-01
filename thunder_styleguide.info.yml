@@ -5,3 +5,6 @@ core_version_requirement: ^8.7.7 || ^9
 package: 'Thunder'
 dependencies:
   - thunder_testing_demo:thunder_testing_demo
+default_content:
+  node:
+    - b49a87ba-0112-4a6a-8d4e-fcaad4a02bae
