@@ -1,0 +1,357 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: b49a87ba-0112-4a6a-8d4e-fcaad4a02bae
+  bundle: article
+  default_langcode: en
+  depends:
+    111715fd-b6b3-4aaa-9947-8fd4782c63a9: media
+    bfc251bc-de35-467d-af44-1f7a7012b845: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Nesting test'
+  created:
+    -
+      value: 1564485704
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  moderation_state:
+    -
+      value: published
+  path:
+    -
+      alias: /no-browser-hacks
+      langcode: en
+      pathauto: 1
+  publish_state:
+    -
+      value: _none
+  unpublish_state:
+    -
+      value: _none
+  field_paragraphs:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: dc20c033-5d26-478e-b2c6-bada6624aa1e
+          bundle: nested
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1564485716
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_paragraph:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: ac0ae207-3d29-467d-b530-2ba995292c0f
+                  bundle: nested
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1564485730
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_paragraph:
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: f413cec7-e841-42e5-a08c-28c490ff78a3
+                          bundle: nested
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1564485736
+                          behavior_settings:
+                            -
+                              value: {  }
+                          revision_translation_affected:
+                            -
+                              value: true
+                          field_paragraph:
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: 6199922c-69bc-4216-bd2b-3d5f7d6aaa23
+                                  bundle: image
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1564491155
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_image:
+                                    -
+                                      entity: 111715fd-b6b3-4aaa-9947-8fd4782c63a9
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: bbaa4148-18dc-4e83-a408-3652bea42dd9
+                                  bundle: nested
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1564485740
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_paragraph:
+                                    -
+                                      entity:
+                                        _meta:
+                                          version: '1.0'
+                                          entity_type: paragraph
+                                          uuid: 5dcd4bbf-ea7b-413a-bb6e-1b5db1d87724
+                                          bundle: nested
+                                          default_langcode: en
+                                        default:
+                                          status:
+                                            -
+                                              value: true
+                                          created:
+                                            -
+                                              value: 1564486822
+                                          behavior_settings:
+                                            -
+                                              value: {  }
+                                          revision_translation_affected:
+                                            -
+                                              value: true
+                                          field_paragraph:
+                                            -
+                                              entity:
+                                                _meta:
+                                                  version: '1.0'
+                                                  entity_type: paragraph
+                                                  uuid: f60acb09-f598-4666-9234-9a0ce057f48b
+                                                  bundle: nested
+                                                  default_langcode: en
+                                                default:
+                                                  status:
+                                                    -
+                                                      value: true
+                                                  created:
+                                                    -
+                                                      value: 1564487491
+                                                  behavior_settings:
+                                                    -
+                                                      value: {  }
+                                                  revision_translation_affected:
+                                                    -
+                                                      value: true
+                                                  field_paragraph:
+                                                    -
+                                                      entity:
+                                                        _meta:
+                                                          version: '1.0'
+                                                          entity_type: paragraph
+                                                          uuid: 60d79caa-2794-4fde-b4d7-23aeb7b5dce5
+                                                          bundle: nested
+                                                          default_langcode: en
+                                                        default:
+                                                          status:
+                                                            -
+                                                              value: true
+                                                          created:
+                                                            -
+                                                              value: 1564487503
+                                                          behavior_settings:
+                                                            -
+                                                              value: {  }
+                                                          revision_translation_affected:
+                                                            -
+                                                              value: true
+                                            -
+                                              entity:
+                                                _meta:
+                                                  version: '1.0'
+                                                  entity_type: paragraph
+                                                  uuid: d92a1877-a7c9-440d-8b39-300c4394bd14
+                                                  bundle: text
+                                                  default_langcode: en
+                                                default:
+                                                  status:
+                                                    -
+                                                      value: true
+                                                  created:
+                                                    -
+                                                      value: 1564486830
+                                                  behavior_settings:
+                                                    -
+                                                      value: {  }
+                                                  revision_translation_affected:
+                                                    -
+                                                      value: true
+                                                  field_text:
+                                                    -
+                                                      value: "<p>6th</p>\r\n"
+                                                      format: basic_html
+                                    -
+                                      entity:
+                                        _meta:
+                                          version: '1.0'
+                                          entity_type: paragraph
+                                          uuid: e9673755-64d2-4331-a252-0e91e4817b66
+                                          bundle: text
+                                          default_langcode: en
+                                        default:
+                                          status:
+                                            -
+                                              value: true
+                                          created:
+                                            -
+                                              value: 1564485759
+                                          behavior_settings:
+                                            -
+                                              value: {  }
+                                          revision_translation_affected:
+                                            -
+                                              value: true
+                                          field_text:
+                                            -
+                                              value: "<p>5th</p>\r\n"
+                                              format: basic_html
+                            -
+                              entity:
+                                _meta:
+                                  version: '1.0'
+                                  entity_type: paragraph
+                                  uuid: b9fbe657-81e2-4579-bd35-d5715eae5843
+                                  bundle: text
+                                  default_langcode: en
+                                default:
+                                  status:
+                                    -
+                                      value: true
+                                  created:
+                                    -
+                                      value: 1564485792
+                                  behavior_settings:
+                                    -
+                                      value: {  }
+                                  revision_translation_affected:
+                                    -
+                                      value: true
+                                  field_text:
+                                    -
+                                      value: "<p>4th</p>\r\n"
+                                      format: basic_html
+                    -
+                      entity:
+                        _meta:
+                          version: '1.0'
+                          entity_type: paragraph
+                          uuid: 857e8c8b-fb39-407c-8ed2-6928b84f9a40
+                          bundle: text
+                          default_langcode: en
+                        default:
+                          status:
+                            -
+                              value: true
+                          created:
+                            -
+                              value: 1564485765
+                          behavior_settings:
+                            -
+                              value: {  }
+                          revision_translation_affected:
+                            -
+                              value: true
+                          field_text:
+                            -
+                              value: "<p>3rd</p>\r\n"
+                              format: basic_html
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: d2bd4663-c077-43a5-8630-4df1fc690749
+                  bundle: text
+                  default_langcode: en
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1564485723
+                  behavior_settings:
+                    -
+                      value: {  }
+                  revision_translation_affected:
+                    -
+                      value: true
+                  field_text:
+                    -
+                      value: "<p>2nd level</p>\r\n"
+                      format: basic_html
+  field_channel:
+    -
+      entity: bfc251bc-de35-467d-af44-1f7a7012b845
+  field_seo_title:
+    -
+      value: 'no browser hacks'
